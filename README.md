@@ -2,16 +2,11 @@
 
 ## How do I install these formulae?
 
-`brew install somebody241/mylibrewolf/<formula>`
+`brew install somebody241/mylibrewolf/mylibrewolf --no-quarantine`
 
-Or `brew tap somebody241/mylibrewolf` and then `brew install <formula>`.
+Or `brew tap somebody241/mylibrewolf` and then `brew install --cask mylibrewolf --no-quarantine`.
 
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "somebody241/mylibrewolf"
-brew "<formula>"
-```
+If downloaded withouth the '--no-quarantine' parameter, use the necessary command - 'xattr -d com.apple.quarantine /Applications/Librewolf.app' or '/Users/[YourUsername]/Applications/Librewolf.app'
 
 ## Documentation
 
